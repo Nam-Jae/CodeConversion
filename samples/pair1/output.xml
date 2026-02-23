@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PurchaseOrder>
+  <OrderInfo>
+    <PONumber>PO-2024-001234</PONumber>
+    <Date>2024/03/15</Date>
+    <BuyerCode>B-5678</BuyerCode>
+    <BuyerName>홍길동</BuyerName>
+    <UrgencyLevel>1</UrgencyLevel>
+    <TotalAmount>2875000</TotalAmount>
+    <ItemCount>2</ItemCount>
+  </OrderInfo>
+  <LineItems>
+    <Line number="1">
+      <SKU>A100</SKU>
+      <Description>노트북 프로 15</Description>
+      <Qty>2</Qty>
+      <Price>1500000</Price>
+      <DiscountRate>0.10</DiscountRate>
+      <LineTotal>2700000</LineTotal>
+    </Line>
+    <Line number="2">
+      <SKU>B200</SKU>
+      <Description>무선 마우스</Description>
+      <Qty>5</Qty>
+      <Price>35000</Price>
+      <DiscountRate>0.00</DiscountRate>
+      <LineTotal>175000</LineTotal>
+    </Line>
+  </LineItems>
+  <Delivery>
+    <Type>EXP</Type>
+    <FullAddress>서울시 강남구 테헤란로 123 [06142]</FullAddress>
+  </Delivery>
+</PurchaseOrder>

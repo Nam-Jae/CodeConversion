@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderRequest xmlns="http://systemA.example.com/orders">
+  <Header>
+    <OrderId>ORD-2024-005678</OrderId>
+    <OrderDate>2024-05-20T14:00:00</OrderDate>
+    <CustomerCode>CUST-9012</CustomerCode>
+    <CustomerName>김철수</CustomerName>
+    <Priority>NORMAL</Priority>
+  </Header>
+  <Items>
+    <Item seq="1">
+      <ProductCode>PROD-C300</ProductCode>
+      <ProductName>기계식 키보드</ProductName>
+      <Quantity>3</Quantity>
+      <UnitPrice>120000</UnitPrice>
+      <Discount>5</Discount>
+    </Item>
+  </Items>
+  <Shipping>
+    <Method>STANDARD</Method>
+    <Address>부산시 해운대구 센텀중앙로 55</Address>
+    <ZipCode>48058</ZipCode>
+  </Shipping>
+</OrderRequest>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PurchaseOrder>
+  <OrderInfo>
+    <PONumber>PO-2024-005678</PONumber>
+    <Date>2024/05/20</Date>
+    <BuyerCode>B-9012</BuyerCode>
+    <BuyerName>김철수</BuyerName>
+    <UrgencyLevel>3</UrgencyLevel>
+    <TotalAmount>342000</TotalAmount>
+    <ItemCount>1</ItemCount>
+  </OrderInfo>
+  <LineItems>
+    <Line number="1">
+      <SKU>C300</SKU>
+      <Description>기계식 키보드</Description>
+      <Qty>3</Qty>
+      <Price>120000</Price>
+      <DiscountRate>0.05</DiscountRate>
+      <LineTotal>342000</LineTotal>
+    </Line>
+  </LineItems>
+  <Delivery>
+    <Type>STD</Type>
+    <FullAddress>부산시 해운대구 센텀중앙로 55 [48058]</FullAddress>
+  </Delivery>
+</PurchaseOrder>

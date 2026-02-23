@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  gateway:
+    build:
+      context: .
+      dockerfile: services/gateway/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - ANALYZER_URL=http://analyzer:8001
+      - GENERATOR_URL=http://generator:8002
+      - TESTER_URL=http://tester:8003
+    depends_on:
+      - analyzer
+      - generator
+      - tester
+
+  analyzer:
+    build:
+      context: .
+      dockerfile: services/analyzer/Dockerfile
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+
+  generator:
+    build:
+      context: .
+      dockerfile: services/generator/Dockerfile
+    ports:
+      - "8002:8002"
+    env_file:
+      - .env
+
+  tester:
+    build:
+      context: .
+      dockerfile: services/tester/Dockerfile
+    ports:
+      - "8003:8003"
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - gateway

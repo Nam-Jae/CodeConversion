@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderRequest xmlns="http://systemA.example.com/orders">
+  <Header>
+    <OrderId>ORD-2024-001234</OrderId>
+    <OrderDate>2024-03-15T10:30:00</OrderDate>
+    <CustomerCode>CUST-5678</CustomerCode>
+    <CustomerName>홍길동</CustomerName>
+    <Priority>HIGH</Priority>
+  </Header>
+  <Items>
+    <Item seq="1">
+      <ProductCode>PROD-A100</ProductCode>
+      <ProductName>노트북 프로 15</ProductName>
+      <Quantity>2</Quantity>
+      <UnitPrice>1500000</UnitPrice>
+      <Discount>10</Discount>
+    </Item>
+    <Item seq="2">
+      <ProductCode>PROD-B200</ProductCode>
+      <ProductName>무선 마우스</ProductName>
+      <Quantity>5</Quantity>
+      <UnitPrice>35000</UnitPrice>
+      <Discount>0</Discount>
+    </Item>
+  </Items>
+  <Shipping>
+    <Method>EXPRESS</Method>
+    <Address>서울시 강남구 테헤란로 123</Address>
+    <ZipCode>06142</ZipCode>
+  </Shipping>
+</OrderRequest>
